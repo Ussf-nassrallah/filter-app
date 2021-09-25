@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__grid,
+  &__sidebar,
+  &__list {
+    overflow-y: auto;
+  }
+
+  &__grid {
+    display: flex;
+    flex: 1;
+  }
+
+  &__sidebar {
+    flex-basis: 300px;
+    padding: 1rem;
+  }
+
+  &__list {
+    flex: 1;
+  }
+}
