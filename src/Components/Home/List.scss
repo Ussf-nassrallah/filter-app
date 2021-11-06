@@ -1,6 +1,6 @@
+@import "../../Styles/helpers/helpers";
+
 .list-wrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  padding: 1rem;
+    @include grid(3, 2rem);
+    padding: 1rem;
 }

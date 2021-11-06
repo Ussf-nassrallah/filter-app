@@ -1,12 +1,24 @@
+@import "../../Styles/helpers/helpers";
+
 .label {
-  margin-bottom: 1rem;
-  font-weight: 600;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .input-group {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint-down(medium) {
+        margin-bottom: 1rem;
+
+        .makeStyles-root-11 {
+            width: 90%;
+            padding-left: 1rem;
+            // padding-right: 1rem;
+        }
+    }
 }
 
 p#label-range {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
