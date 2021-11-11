@@ -3,4 +3,14 @@
 .list-wrap {
     @include grid(3, 2rem);
     padding: 1rem;
+
+    @include breakpoint-down(small) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        overflow-x: scroll;
+
+        > * {
+            width: 230px;
+        }
+    }
 }
